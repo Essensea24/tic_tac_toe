@@ -1,0 +1,36 @@
+.boxes {
+	width: 200px;
+	height:200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.playerButtons {
+	display: inline;
+}
+
+.playerOneLogo {
+	background-image: url("js.jpeg");
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	border: 10px solid yellow;
+
+
+}
+
+.playerTwoLogo {
+	background-image: url("HTML.jpeg");
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	border: 10px solid red;
+
+}
+
+TD {
+	border: 5px solid black;
+}
+

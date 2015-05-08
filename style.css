@@ -1,0 +1,28 @@
+
+
+HEADER {
+	font-family: Times, "Times New Roman", Georgia, serif; 
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.boxes {
+	width: 50%;
+	height:500px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+TD {
+	border: 5px solid black;
+}
+
+#firstHit, #secondHit{
+	background-color: black;
+	width: 100px;
+	height: 30px;
+	color: grey;
+	text-align: center;
+	padding-top: 10px;
+}
