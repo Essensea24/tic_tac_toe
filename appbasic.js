@@ -13,7 +13,7 @@ function clearBoard(){
 	for ( i=0; i<9;i++) {
 	boxArr[i].innerHTML = "";
 	boxArr[i].style.backgroundImage = "";
-	hit="player2"
+	hit="player2"	
 	}
 	alert("Board is cleared!")
 

@@ -2,19 +2,32 @@ var boxArr = document.getElementsByClassName("boxes");
 
 var button = document.getElementById("refreshButton");
 
+var one = document.getElementById("firstHit");
+
+var two = document.getElementById("secondHit");
+var oneNumber = document.getElementById("oneResult");
+var twoNumber = document.getElementById("twoResult");
+
 
 var hit="player2"
-var result;
+
 gameStart();
 
-button.addEventListener("click", clearBoard)
+button.addEventListener("click", clearBoard);
+one.addEventListener("click", luckyNumberOne);
+two.addEventListener("click", luckyNumberTwo);
 
-function luckyNumberP1() {
-+    document.getElementById("firstHit").innerHTML= Math.floor(Math.random()*100);
-+}
-+
-+function luckyNumberP2() {
-+    document.getElementById("secondHit").innerHTML= Math.floor(Math.random()*100);
+
+
+function luckyNumberOne() {
+	oneNumber.innerHTML= Math.floor(Math.random()*100);
+	alert(oneNumber.innerHTML);
+}
+
+function luckyNumberTwo() {
+	twoNumber.innerHTML= Math.floor(Math.random()*100);
+	alert(twoNumber.innerHTML);
+}
 
 function clearBoard(){
 	for ( i=0; i<9;i++) {

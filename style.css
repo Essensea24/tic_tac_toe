@@ -1,11 +1,29 @@
 
 
-HEADER {
-	font-family: Times, "Times New Roman", Georgia, serif; 
-	text-align: center;
-	margin: 0 auto;
-	font-size: 20px;
+.gameLogo {
+	background: url("tic_tac_toe.png") center;
+	width: 17%;
+	height: 200px;
+	margin: 2% auto;	
+	border-radius: 50%;
+	box-shadow: 10px 10px 5px #888888;
 }
+
+.gameNameOne {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.gameNameTwo {
+	text-align: center;	
+}
+
+.gameNameThree {
+	text-align: center;
+	padding-top: 4%;
+	padding-left: 4	0%;
+}
+
 
 .boxes {
 	width: 50%;
@@ -14,7 +32,12 @@ HEADER {
 	margin: 0 auto;
 }
 
-#firstHit, #secondHit{
+#randomNum{
+	display: inline-block;
+	width: 25%,
+}
+
+#oneResult, #twoResult{	
 	background-color: black;
 	width: 100px;
 	height: 30px;
@@ -23,7 +46,7 @@ HEADER {
 	padding-top: 10px;
 }
 
-TABLE {
+TABLE {	
 	width: 60%;
 	margin: 0 auto;
 }
