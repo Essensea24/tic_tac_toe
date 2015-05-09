@@ -1,8 +1,21 @@
+HEADER {
+	width: 50%;
+	margin: 40px auto;
+	background-color: grey;
+	text-align: center;
+}
+
+TABLE {
+	width: 60%;
+	margin: 0 auto;
+}
+
+
 .boxes {
 	width: 200px;
 	height:200px;
 	text-align: center;
-	margin: 0 auto;
+	margin: 40px auto;
 }
 
 .playerButtons {
@@ -22,6 +35,7 @@
 
 .playerTwoLogo {
 	background-image: url("HTML.jpeg");
+	background-repeat: repeat-x none;
 	width: 200px;
 	height: 200px;
 	text-align: center;

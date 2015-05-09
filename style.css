@@ -14,10 +14,6 @@ HEADER {
 	margin: 0 auto;
 }
 
-TD {
-	border: 5px solid black;
-}
-
 #firstHit, #secondHit{
 	background-color: black;
 	width: 100px;
@@ -25,4 +21,48 @@ TD {
 	color: grey;
 	text-align: center;
 	padding-top: 10px;
+}
+
+TABLE {
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+TD {
+	border: 5px solid black;
+}
+
+
+.boxes {
+	width: 200px;
+	height:200px;
+	text-align: center;
+	margin: 40px auto;
+}
+
+.playerButtons {
+	display: inline;
+}
+
+.playerOneLogo {
+	background-image: url("js.jpeg");
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	border: 10px solid yellow;
+
+
+}
+
+.playerTwoLogo {
+	background-image: url("HTML.jpeg");
+	background-repeat: repeat-x none;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	border: 10px solid red;
+
 }
