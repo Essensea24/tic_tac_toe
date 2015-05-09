@@ -9,6 +9,13 @@ gameStart();
 
 button.addEventListener("click", clearBoard)
 
+function luckyNumberP1() {
++    document.getElementById("firstHit").innerHTML= Math.floor(Math.random()*100);
++}
++
++function luckyNumberP2() {
++    document.getElementById("secondHit").innerHTML= Math.floor(Math.random()*100);
+
 function clearBoard(){
 	for ( i=0; i<9;i++) {
 	boxArr[i].innerHTML = "";
@@ -84,3 +91,4 @@ function winnerIs() {
 }
 
 
+	
