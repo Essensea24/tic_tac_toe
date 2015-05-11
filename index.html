@@ -4,72 +4,57 @@
 	<title>TTT</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
 	<header>
-		<div class = "gameLogo">
-			<h1 class= "gameNameOne">Tic.<h1>
-			<h1 class= "gameNameTwo">Tac.<h1>
-			<h1 class= "gameNameThree">Toe.</h1>
-		</div>
-		<p>Hello! welcome to your daily tic tac toe game. To start the game, please select your logo</p>
+			<div class = "gameLogo">
+				<h5 id= "gameNameOne">Tic.<h5>
+				<h5 id= "gameNameTwo">Tac.<h5>
+				<h5 id= "gameNameThree">Toe.</h5>
+			</div>
+			<div class = "headerBorder"></div>
+	
 	</header>
 
-	<!-- <div>
-	<h5 class="iconSelect">Select your logo</h5>
-			<button>js</button>
-			<button>ag</button>
-			<button>html</button>
-			<button>css</button>
-			<button>ruby</button>
-			<button>rail</button>
-	
-	</div> -->
+	<main>
 
-	
-
-	<div id = "randomNum">
-		<div>
-			<p id = "oneResult"></p>
-			<button id = "firstHit">PlayerOne click</button>
+		<div class= "buttons">
+			<button id="playerOneIcon">Player One</button>
+			<button id="refreshButton">Clear Board</button>
+			<button id="playerTwoIcon">Player Two</button>
 		</div>
 
-		<div>
-			<p id = "twoResult"></p></span>
-			<button id = "secondHit">Playertwo click</button>
+
+		<div class = "chartSize">
+			<table>
+				<tr class = "firstRow">
+					<td id = "boxOne" class="boxes"></td>
+					<td id = "boxTwo" class="boxes"></td>
+					<td id = "boxThree" class="boxes"></td>
+				</tr>
+				<tr class = "secondRow">
+					<td id = "boxFour" class="boxes"></td>
+					<td id = "boxFive" class="boxes"></td>
+					<td id = "boxSix" class="boxes"></td>
+				</tr>
+
+				<tr class = "thirdRow">
+					<td id = "boxSeven" class="boxes"></td>
+					<td id = "boxEight" class="boxes"></td>
+					<td id = "boxNine" class="boxes"></td>
+				</tr>
+			</table>
 		</div>
-	</div>
-
-
-
-
-	</div>
-	<div>
-	<button id="refreshButton">clearBoard</button>
-	<!-- <button>Reset Score</button> -->
-	</div>
-
-
-	<div>
-	<table>
-		<tr class = "firstRow">
-			<td id = "boxOne" class="boxes"></td>
-			<td id = "boxTwo" class="boxes"></td>
-			<td id = "boxThree" class="boxes"></td>
-		</tr>
-		<tr class = "secondRow">
-			<td id = "boxFour" class="boxes"></td>
-			<td id = "boxFive" class="boxes"></td>
-			<td id = "boxSix" class="boxes"></td>
-		</tr>
-
-		<tr class = "thirdRow">
-			<td id = "boxSeven" class="boxes"></td>
-			<td id = "boxEight" class="boxes"></td>
-			<td id = "boxNine" class="boxes"></td>
-		</tr>
-	</table>
-	</div>
+		<div id="playerOne">
+				<p id = "oneResult"></p>
+				<button id = "firstHit">PlayerOne click</button>
+		</div>
+		<div id = "playerTwo">
+				<p id = "twoResult"></p>
+				<button id = "secondHit">Playertwo click</button>
+		</div>
+	</main>
 
 
 </body>

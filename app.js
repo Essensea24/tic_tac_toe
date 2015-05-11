@@ -64,13 +64,13 @@ function clickInitiated() {
 			alert("This box is taken by an awesome language. Select another box!")
 		} else if (hit == "player2" && this.innerHTML==='') {
 			hit = "player1";
-			content = "JS";
-			this.style.backgroundImage="url('js.jpeg')"
+			content = "x";
+			this.style.backgroundImage="url('x1.jpg')"
 			this.innerHTML = content;
 		} else if (hit = "palyer1" && this.innerHTML===""){
 			hit = "player2";
-			content = "HTML";
-			this.style.backgroundImage="url('HTML.jpeg')";
+			content = "O";
+			this.style.backgroundImage="url('0.png')";
 			this.	innerHTML = content;
 		}
 		console.log("this is running")
@@ -80,26 +80,26 @@ function clickInitiated() {
 
 
 function winnerIs() {
-	if ((boxArr[0].innerHTML==="JS" && boxArr[1].innerHTML==="JS" &&boxArr[2].innerHTML==="JS") || (boxArr[0].innerHTML==="HTML" && boxArr[1].innerHTML==="HTML" && boxArr[2].innerHTML==="HTML")) {
-		alert(boxArr[0].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[3].innerHTML==="JS" && boxArr[4].innerHTML==="JS" &&boxArr[5].innerHTML==="JS") || (boxArr[3].innerHTML==="HTML" && boxArr[4].innerHTML==="HTML" && boxArr[5].innerHTML==="HTML")) {
-		alert(boxArr[3].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[6].innerHTML==="JS" && boxArr[7].innerHTML==="JS" &&boxArr[8].innerHTML==="JS") || (boxArr[6].innerHTML==="HTML" && boxArr[7].innerHTML==="HTML" && boxArr[8].innerHTML==="HTML")) {
-		alert(boxArr[6].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[0].innerHTML==="JS" && boxArr[4].innerHTML==="JS" &&boxArr[8].innerHTML==="JS") || (boxArr[0].innerHTML==="HTML" && boxArr[4].innerHTML==="HTML" && boxArr[8].innerHTML==="HTML")) {
-		alert(boxArr[0].innerHTML + " Rock! GAME OVER")
-	} else if((boxArr[2].innerHTML==="JS" && boxArr[4].innerHTML==="JS" &&boxArr[6].innerHTML==="JS") || (boxArr[2].innerHTML==="HTML" && boxArr[4].innerHTML==="HTML" && boxArr[6].innerHTML==="HTML")) {
-		alert(boxArr[2].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[0].innerHTML==="JS" && boxArr[3].innerHTML==="JS" &&boxArr[5].innerHTML==="JS") || (boxArr[0].innerHTML==="HTML" && boxArr[3].innerHTML==="HTML" && boxArr[5].innerHTML==="HTML")) {
-		alert(boxArr[0].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[1].innerHTML==="JS" && boxArr[4].innerHTML==="JS" &&boxArr[7].innerHTML==="JS") || (boxArr[1].innerHTML==="HTML" && boxArr[4].innerHTML==="HTML" && boxArr[7].innerHTML==="HTML")) {
-		alert(boxArr[1].innerHTML + " Rock! GAME OVER")
-	} else if ((boxArr[2].innerHTML==="JS" && boxArr[5].innerHTML==="JS" &&boxArr[5].innerHTML==="JS") || (boxArr[8].innerHTML==="HTML" && boxArr[2].innerHTML==="HTML" && boxArr[5].innerHTML==="HTML")) {
-		alert(boxArr[8].innerHTML + " Rock! GAME OVER!")
+	if ((boxArr[0].innerHTML==="x" && boxArr[1].innerHTML==="x" &&boxArr[2].innerHTML==="x") || (boxArr[0].innerHTML==="O" && boxArr[1].innerHTML==="O" && boxArr[2].innerHTML==="O")) {
+		alert(boxArr[0].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[3].innerHTML==="x" && boxArr[4].innerHTML==="x" &&boxArr[5].innerHTML==="x") || (boxArr[3].innerHTML==="O" && boxArr[4].innerHTML==="O" && boxArr[5].innerHTML==="O")) {
+		alert(boxArr[3].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[6].innerHTML==="x" && boxArr[7].innerHTML==="x" &&boxArr[8].innerHTML==="x") || (boxArr[6].innerHTML==="O" && boxArr[7].innerHTML==="O" && boxArr[8].innerHTML==="O")) {
+		alert(boxArr[6].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[0].innerHTML==="x" && boxArr[4].innerHTML==="x" &&boxArr[8].innerHTML==="x") || (boxArr[0].innerHTML==="O" && boxArr[4].innerHTML==="O" && boxArr[8].innerHTML==="O")) {
+		alert(boxArr[0].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if((boxArr[2].innerHTML==="x" && boxArr[4].innerHTML==="x" &&boxArr[6].innerHTML==="x") || (boxArr[2].innerHTML==="O" && boxArr[4].innerHTML==="O" && boxArr[6].innerHTML==="O")) {
+		alert(boxArr[2].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[0].innerHTML==="x" && boxArr[3].innerHTML==="x" &&boxArr[6].innerHTML==="x") || (boxArr[0].innerHTML==="O" && boxArr[3].innerHTML==="O" && boxArr[6].innerHTML==="O")) {
+		alert(boxArr[0].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[1].innerHTML==="x" && boxArr[4].innerHTML==="x" &&boxArr[7].innerHTML==="x") || (boxArr[1].innerHTML==="O" && boxArr[4].innerHTML==="O" && boxArr[7].innerHTML==="O")) {
+		alert(boxArr[1].innerHTML + " Rock! GAME OVER"); clearBoard();
+	} else if ((boxArr[2].innerHTML==="x" && boxArr[5].innerHTML==="x" &&boxArr[8].innerHTML==="x") || (boxArr[8].innerHTML==="O" && boxArr[2].innerHTML==="O" && boxArr[5].innerHTML==="O")) {
+		alert(boxArr[8].innerHTML + " Rock! GAME OVER!"); clearBoard();
 	} else if (boxArr[0].innerHTML==="" || boxArr[1].innerHTML==="" || boxArr[2].innerHTML===""|| boxArr[3].innerHTML==="" || boxArr[4].innerHTML==="" || boxArr[5].innerHTML==="" || boxArr[6].innerHTML==="" || boxArr[7].innerHTML==="" || boxArr[8].innerHTML==="") {
 		console.log("keep playing")
 	} else {
-		console.log("GAME OVER! Both languages S-U-C-K!")
+		console.log("GAME OVER! Both languages S-U-C-K!"); clearBoard()
 	}	
 }
 
