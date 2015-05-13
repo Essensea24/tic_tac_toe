@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>TTT</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Dialy Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src = "js/angular.js"></script>
+		<script type="text/javascript" src="js/firebase.js"></script>
+		<script type="text/javascript" src="js/angularfire.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/TicTacToeController.js"></script>
 
-<body>
+	</head>
 
-	<header>
-			<div class = "gameLogo">
-				<h5 id= "gameNameOne">Tic.<h5>
-				<h5 id= "gameNameTwo">Tac.<h5>
-				<h5 id= "gameNameThree">Toe.</h5>
+	<body ng-app = "tictactoeApp">
+
+
+		<header>
+				<div class = "gameLogo">
+					<h5 id= "gameNameOne">Tic.</h5>
+					<h5 id= "gameNameTwo">Tac.</h5>
+					<h5 id= "gameNameThree">Toe.</h5>
+				</div>
+				<div class = "xlogo"></div>
+
+		
+		</header>
+		
+		<div id="refreshButton"><button>Refresh</button></div>
+		<main ng-controller = "TicTacToeController as gameCtrl">
+			<div class = "chartBox" ng-repeat = "boxes in gameCtrl.boxList">
+					
+			<button id = "box">{{boxes.box}}</button>
+
 			</div>
-			<div class = "headerBorder"></div>
-	
-	</header>
+			
 
-	<main>
+			
 
-		<div class= "buttons">
-			<button id="playerOneIcon">Player One</button>
-			<button id="refreshButton">Clear Board</button>
-			<button id="playerTwoIcon">Player Two</button>
-		</div>
+		</main>
 
 
-		<div class = "chartSize">
-			<table>
-				<tr class = "firstRow">
-					<td id = "boxOne" class="boxes"></td>
-					<td id = "boxTwo" class="boxes"></td>
-					<td id = "boxThree" class="boxes"></td>
-				</tr>
-				<tr class = "secondRow">
-					<td id = "boxFour" class="boxes"></td>
-					<td id = "boxFive" class="boxes"></td>
-					<td id = "boxSix" class="boxes"></td>
-				</tr>
+	</body>
 
-				<tr class = "thirdRow">
-					<td id = "boxSeven" class="boxes"></td>
-					<td id = "boxEight" class="boxes"></td>
-					<td id = "boxNine" class="boxes"></td>
-				</tr>
-			</table>
-		</div>
-		<div id="playerOne">
-				<p id = "oneResult"></p>
-				<button id = "firstHit">PlayerOne click</button>
-		</div>
-		<div id = "playerTwo">
-				<p id = "twoResult"></p>
-				<button id = "secondHit">Playertwo click</button>
-		</div>
-	</main>
-
-
-</body>
-<script type="text/javascript" src="app.js"></script>
 </html>
